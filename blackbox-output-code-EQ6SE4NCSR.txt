@@ -1,0 +1,14 @@
+vistal-visuals/
+├── index.html
+├── editor.html
+├── gallery.html
+├── projects.html
+├── profile.html
+├── css/
+│   └── style.css
+├── js/
+│   ├── main.js
+│   ├── editor.js
+│   └── upload.js
+└── assets/
+    └── (your images/videos go here)

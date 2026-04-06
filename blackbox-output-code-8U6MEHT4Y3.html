@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vistal Visuals - Design & Edit</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2><i class="fas fa-eye"></i> Vistal Visuals</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="editor.html" class="nav-link">Editor</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="profile.html" class="nav-link">Profile</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Transform Your Visuals</h1>
+            <p>Upload, edit, and create stunning videos & photos with our powerful editor</p>
+            <div class="hero-buttons">
+                <a href="editor.html" class="btn btn-primary">Start Editing</a>
+                <a href="gallery.html" class="btn btn-secondary">View Gallery</a>
+            </div>
+        </div>
+        <div class="hero-upload">
+            <div class="upload-area" onclick="document.getElementById('fileInput').click()">
+                <i class="fas fa-cloud-upload-alt"></i>
+                <p>Drag & Drop or Click to Upload</p>
+                <input type="file" id="fileInput" multiple accept="image/*,video/*" style="display:none;">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+        <div class="container">
+            <h2>Powerful Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-cut"></i>
+                    <h3>Advanced Editing</h3>
+                    <p>Cut, trim, crop, and enhance your media with precision tools</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-magic"></i>
+                    <h3>AI Effects</h3>
+                    <p>Smart filters, auto-enhance, and AI-powered transformations</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-layer-group"></i>
+                    <h3>Layer Support</h3>
+                    <p>Work with multiple layers, overlays, and compositions</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-share-alt"></i>
+                    <h3>Instant Sharing</h3>
+                    <p>Export and share your creations across all platforms</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

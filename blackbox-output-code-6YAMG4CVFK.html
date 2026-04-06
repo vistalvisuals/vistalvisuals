@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor - Vistal Visuals</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation (same as index) -->
+    <nav class="navbar">
+        <!-- Same nav code as index.html -->
+    </nav>
+
+    <div class="editor-container">
+        <!-- Toolbar -->
+        <div class="toolbar">
+            <div class="tool-group">
+                <button class="tool-btn active" data-tool="select"><i class="fas fa-mouse-pointer"></i></button>
+                <button class="tool-btn" data-tool="crop"><i class="fas fa-crop"></i></button>
+                <button class="tool-btn" data-tool="text"><i class="fas fa-font"></i></button>
+                <button class="tool-btn" data-tool="brush"><i class="fas fa-paint-brush"></i></button>
+            </div>
+            <div class="tool-group">
+                <button class="tool-btn"><i class="fas fa-undo"></i></button>
+                <button class="tool-btn"><i class="fas fa-redo"></i></button>
+            </div>
+            <div class="tool-group">
+                <select class="filter-select">
+                    <option>Normal</option>
+                    <option>Grayscale</option>
+                    <option>Sepia</option>
+                    <option>Blur</option>
+                </select>
+            </div>
+            <button class="btn btn-primary" onclick="exportCanvas()">Export</button>
+        </div>
+
+        <!-- Canvas Area -->
+        <div class="canvas-area">
+            <canvas id="editorCanvas" width="1200" height="800"></canvas>
+            <div class="upload-overlay" id="uploadOverlay">
+                <div class="upload-area" onclick="uploadMedia()">
+                    <i class="fas fa-cloud-upload-alt"></i>
+                    <p>Upload Image/Video to Start</p>
+                    <input type="file" id="mediaInput" accept="image/*,video/*" style="display:none;">
+                </div>
+            </div>
+        </div>
+
+        <!-- Properties Panel -->
+        <div class="properties-panel">
+            <h3>Properties</h3>
+            <div id="propertiesContent">
+                <p>Select an element to edit properties</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/editor.js"></script>
+</body>
+</html>
